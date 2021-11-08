@@ -1,4 +1,10 @@
 /**************************** main ********************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-image: url(assets/cafe-bg.jpg);
     background-repeat: no-repeat;
@@ -100,3 +106,94 @@ aside{
     margin: 0;
    
 }
+
+/* ********************** Login form  and  signup form ******************************/
+#login, #signup{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 420px;
+    height: 540px;
+    padding: 80px 50px;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+#login > h2 , #signup > h2 {
+    margin: 0;
+    padding: 0 0 40px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+input[type=submit] {
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    background: red;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 14%;
+    width: 100%;
+}
+.signup-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ************ Login **************/
+p.credentials {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color:#fff;
+}
+p.credentials + input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* ********** sign up ***********/
+#signup {
+    width: 450px;
+    height: 600px;
+}
+section{
+    clear: left;
+}
+section  p {
+    float: left;
+    width: 45%;
+    margin-top: 7px;
+
+    font-size: 17px;
+    display: inline;
+    padding: 5px;
+}
+#signup section > input{
+    float: left;
+    width: 45%;
+    margin-top: 5px;
+
+    border: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;  
+}
+
