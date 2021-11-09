@@ -5,15 +5,17 @@
     box-sizing: border-box;
 }
 
-body{
+
+main{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    width:80%;
+    height: 100vh;
+    margin-left: -4px;
+    color: white;
     background-image: url(assets/cafe-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-main{
-    display: flex;
-    justify-content: space-between;
-    color: white;
 }
 a{
     color:white;
@@ -26,11 +28,15 @@ a:hover{
 }
 /**************************** nav*****************************/
 nav{
+    position:sticky;
+    top:0px;
+    
     height: 100vh;
-    display:flex;
+    display:inline-flex;
     flex-direction: column;
     width:20%;
-    background-color: rgb(14, 14, 82);
+    background-color: rgb(22, 22, 85);
+    vertical-align: top;
 }
 nav>div{
     width:100%;
@@ -39,7 +45,7 @@ nav>div{
     justify-content: center;
     align-items: center;
 }
-nav>div:hover{
+.link:hover{
     border: 1px solid white;
     background-color: rgb(70, 70, 216);
 }
@@ -49,10 +55,10 @@ nav>div:hover{
 .img-div>img{
     height: 50%;
     width:50%;
-    border-radius: 40%;
+    border-radius: 50%;
 }
 .link{
-    height: 80px;
+    height: 40px;
 }
 .grow{
     flex-grow: 4;
@@ -60,6 +66,29 @@ nav>div:hover{
 }
 .grow>p{
     margin: 1px;
+}
+.login{
+    height:150px;
+    margin:2px;
+    /* background-color: turquoise; */
+}
+.login>a{
+    background-color: red;
+    height:30px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px;
+    width:100px;
+    bottom: none;
+    color:white;
+    font-weight: bold;
+    border:1px solid black;
+    
+}
+.login>a:hover{
+    background-color: rgb(219, 73, 47);
+    border:1px solid black;
+    color:rgb(188, 224, 248);
 }
 /*********************************** aside*******************************/
 aside{
@@ -108,6 +137,7 @@ aside{
 }
 
 /* ********************** Login form  and  signup form ******************************/
+
 #login, #signup{
     position: absolute;
     z-index: 2;
@@ -196,4 +226,3 @@ section  p {
     color: #fff;
     font-size: 15px;  
 }
-
