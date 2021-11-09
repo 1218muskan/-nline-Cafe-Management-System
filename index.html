@@ -37,8 +37,8 @@
             <a href="">Contact</a>
         </div>
         
-        <div class="login animate__animated animate__backInDown animate__slow">
-            <a href="">Login</a>
+        <div class="animate__animated animate__backInDown animate__slow">
+            <button class="loginBtn">Login</button>
        </div>
         <div class="grow">
             <p>level 13,ELIZABETH st,</p>
@@ -48,6 +48,7 @@
     </nav>
 
     <main>
+        <div id="home">
        
         <!-- ********************************Aside****************************** -->
         <aside>
@@ -71,9 +72,19 @@
             </div>
             
         </aside>
+       </div>
+
+       <div id="about">
+           
+       </div>
+
     </main>
+    
+    
+
         <!-- *************************** login form ************************** -->
-        <div id="login">
+        <div id="login" class="animate__animated animate__fadeIn">
+            <button class="closeBtn">X</button>
             <h2>LOGIN</h2>
             <form action= "">
                 <p class="credentials">Email ID</p>
@@ -84,12 +95,13 @@
 
                 <br><input type="submit" value="Login">
             </form>
-            <p class="signup-login">Don't have an account? <a href="">sign up</a> </p>
+            <p class="signup-login">Don't have an account? <a href="#">sign up</a> </p>
 
         </div>
 
         <!-- ************************* sign up form *********************** -->
-        <div id="signup">
+        <div id="signup" class="animate__animated animate__fadeIn">
+            <button class="closeBtn">X</button>
             <h2>SIGN UP</h2>
             <form action= "">
                 <section>     <p> Full Name     </p>     <input type="text">     </section>
@@ -104,10 +116,13 @@
 
                 <br><input type="submit" value="Submit">
             </form>
-            <p class="signup-login">Already have an account? <a href="">login</a> </p>
+            <p class="signup-login">Already have an account? <a href="#">login</a> </p>
             
         </div>
 
-</body>
 
+
+        <!-- ************************** Linking JS File ************************** -->
+        <script src="index.js"></script>
+</body>
 </html>

@@ -5,17 +5,9 @@
     box-sizing: border-box;
 }
 
-
 main{
-    display: inline-flex;
-    flex-direction: row-reverse;
     width:80%;
-    height: 100vh;
-    margin-left: -4px;
-    color: white;
-    background-image: url(assets/cafe-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-left: 20%;
 }
 a{
     color:white;
@@ -28,7 +20,7 @@ a:hover{
 }
 /**************************** nav*****************************/
 nav{
-    position:sticky;
+    position:fixed;
     top:0px;
     
     height: 100vh;
@@ -67,14 +59,10 @@ nav>div{
 .grow>p{
     margin: 1px;
 }
-.login{
-    height:150px;
-    margin:2px;
-    /* background-color: turquoise; */
-}
-.login>a{
+.loginBtn{
+    margin: 45px 0 0;
     background-color: red;
-    height:30px;
+    height:32px;
     border-radius: 10px;
     text-align: center;
     padding: 3px;
@@ -85,15 +73,25 @@ nav>div{
     border:1px solid black;
     
 }
-.login>a:hover{
+.loginBtn:hover{
     background-color: rgb(219, 73, 47);
-    border:1px solid black;
+    border:1px solid white;
     color:rgb(188, 224, 248);
+    font-size: 14px;
+    cursor: pointer;
 }
-/*********************************** aside*******************************/
+/*********************************** HOME PAGE *******************************/
+#home{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    color: white;
+    background-image: url(assets/cafe-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 aside{
     height:100vh;
-    width: 40%;
+    width: 46%;
  background-color: rgba(57, 43, 184, 0.5);
 }
 .welcome{
@@ -106,13 +104,13 @@ aside{
     font-size: 1.3rem;
 }
 .welcome>h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin: 1px;
 }
 .name{
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .timing{
     display:flex;
@@ -140,7 +138,7 @@ aside{
 
 #login, #signup{
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
@@ -151,7 +149,7 @@ aside{
     width: 420px;
     height: 540px;
     padding: 80px 50px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     display: none;
 }
 #login > h2 , #signup > h2 {
@@ -176,6 +174,23 @@ input[type=submit] {
 .signup-login {
     margin-top: 20px;
     text-align: center;
+    color: #fff;
+}
+.closeBtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    border: none;
+}
+.closeBtn:hover{
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /* ************ Login **************/
@@ -213,6 +228,7 @@ section  p {
     font-size: 17px;
     display: inline;
     padding: 5px;
+    color: white;
 }
 #signup section > input{
     float: left;
