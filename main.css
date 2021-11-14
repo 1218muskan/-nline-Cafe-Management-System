@@ -242,3 +242,41 @@ section  p {
     color: #fff;
     font-size: 15px;  
 }
+/* *************************************about.html***************************************/
+#aimg-div{
+    
+    height:40vh;
+   width:100%; 
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-image: url(assets/coffee.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color:white;
+}
+#aimg-div>h1{
+    font-size:3rem;
+
+    text-align: center;
+
+}
+#aimg-div>.text{
+   
+    background-color: rgba(216, 27, 27, 0.4);
+    width: 40%;
+    height: 100%;
+}
+.text>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top:15%;
+    height: 50%;
+    width: 100%;
+}
+.text h1{
+    font-size: 3rem;
+    margin-top:50px;
+}
