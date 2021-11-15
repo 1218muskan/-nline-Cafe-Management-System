@@ -243,6 +243,7 @@ section  p {
     font-size: 15px;  
 }
 /* *************************************about.html***************************************/
+/* img div */
 #aimg-div{
     
     height:40vh;
@@ -279,4 +280,31 @@ section  p {
 .text h1{
     font-size: 3rem;
     margin-top:50px;
+      margin-left:40px;
+}
+/* content div */
+.content{
+    margin-left:40px;
+    margin-top: 100px;
+}
+.left, .right{
+    display: inline-block;
+    width:40%;
+ vertical-align: top;
+ margin:20px;
+}
+.right>p{
+    margin-bottom:30px;
+}
+.aheading{
+    font-weight: bold;
+    color:brown;
+    margin-bottom: 10px;
+}
+.left>p{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.left li{
+    margin:10px;
 }
