@@ -308,3 +308,80 @@ section  p {
 .left li{
     margin:10px;
 }
+/* img+content */
+.img-a{
+    margin-top:400px;
+    background-color: chocolate;
+   height: 400px;
+    width:100%;
+}
+.c-img{
+    margin-left: 200px;
+}
+.c-img>img{
+    position: relative;
+ 
+    top:-250px;
+    height: 400px;
+    width:400px;
+    margin-left: -4px;
+}
+.f-ic{
+    margin-top: -200px;
+    display: flex;
+    color:white;
+    justify-content: space-around;
+}
+.f-ic p{
+    margin-top: 14px;
+}
+/* contanct */
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    height:400px;
+    align-items: center;
+  
+    color: black;
+}
+.contact p{
+    margin-top: 6px;
+    text-align: center;
+}
+.contact p i{
+    border-radius: 50%;
+    
+    color:rgb(81, 198, 228);
+    /* border:2px solid black; */
+       /* overflow: hidden; */
+}
+
+.c-link{
+    display: inline-block;
+    color:cadetblue;
+    text-align: center;
+}
+.social{
+    
+    text-align: center;
+}
+.c-link i{
+    background-size: cover;
+}
+.c-link:hover{
+    box-shadow:0px 0px 4px 6px rgba(230,196,196,0.3);
+} 
+
+.brown{
+ color: chocolate;
+ font-weight: bold;
+}
+.footer{
+    background-color:rgb(247, 245, 238);
+}
+.down{
+    margin-left: 100px;
+    font-weight: bold;
+      margin-bottom: 15px;
+    text-align: center;
+}
