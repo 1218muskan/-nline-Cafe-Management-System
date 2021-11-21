@@ -380,7 +380,7 @@ section  p {
     background-color:rgb(247, 245, 238);
 }
 .down{
-    margin-left: 100px;
+    /* margin-left: 50px; */
     font-weight: bold;
       margin-bottom: 15px;
     text-align: center;
