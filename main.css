@@ -385,3 +385,93 @@ section  p {
       margin-bottom: 15px;
     text-align: center;
 }
+/* testimonial */
+.person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading-t{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.img-person{
+    height: 100px;
+    width:100px;
+}
+.img-person img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+ 
+
+}
+.about-person{
+    width:50%;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom:70px ;
+    font-size: 1.5 rem;
+
+}
+.change-icon{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.change-icon div{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#f{
+    background-color: brown;
+}
+
+#p2,#p3{
+    display: none;
+}
+
+
+
+.name-t{
+    margin-top: -30px;
+}
+
+
+
+
+
+
+
+/* gallary */
+#container{
+    display: flex;
+    flex-wrap: wrap;
+      
+     background-image: linear-gradient(to bottom right, red, yellow);
+     justify-content: center;
+}
+#container img:nth-child(1){
+margin-top: 100px;
+}
+#container img:nth-child(2){
+    margin-top: 100px;
+    }
+#container>img{
+    max-height: 300px;
+    min-height: 300px;
+    max-width: 100%;
+   margin:10px;
+
+}
+#container img:hover{
+    transform: scale(1.2,1.2);
+    box-shadow: 0px 0px 6px 4px grey;
+}

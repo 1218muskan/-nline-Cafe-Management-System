@@ -32,3 +32,74 @@ login_signup_switch[1].addEventListener("click", function(){
     signupForm.style.display = "none";
     loginForm.style.display = "block";
 });
+
+
+
+
+
+/********************************about us testimonials *********************/
+var imgperson =document.getElementsByClassName("img-person");
+var aboutperson =document.getElementsByClassName("about-person");
+var f =document.getElementsById("f");
+var m =document.getElementsById("m");
+var l =document.getElementsById("l");
+var test=document.getElementsByClassName("testimonial");
+var changeicon=document.getElementsByClassName("change-icon");
+var p1=document.getElementsById("p1");
+var p2=document.getElementsById("p2");
+var p3=document.getElementsById("p3");
+l.addEventListener('click',function(){
+var last= `<div class="person" id="p3">
+<div class="img-person">
+    <img src="assets/person3.png">
+</div>
+<div class="about-person">
+    Lorem, ipsum dolor sit amet consectetur
+    architecto ipsum assumenda! Non, omnis. Ad, nostrum eligendi. Repellendus cupiditate accusamus et
+    voluptatibus quas velit inventore necessitatibus quo vitae corrupti. Incidunt aperiam asperiores
+    harum sequi ab!
+</div>
+<div class="name-t">Fatty hpuguvb </div>
+</div>`
+if(p1){
+    p1.remove();
+}
+if(p2){
+    p2.remove();
+}
+test.append(last);
+changeicon.style.backgroundColor = 'grey';
+l.style.backgroundColor = 'brown';
+
+});
+
+
+m.addEventListener('click',function(){
+    var last= `<div class="person" id="p2">
+    <div class="img-person">
+        <img src="assets/person2.png">
+    </div>
+    <div class="about-person">
+        Lorem, ipsum dolor sit amet consectetur
+        architecto ipsum assumenda! Non, omnis. Ad, nostrum eligendi. Repellendus cupiditate accusamus et
+        voluptatibus quas velit inventore necessitatibus quo vitae corrupti. Incidunt aperiam asperiores
+        harum sequi ab!
+    </div>
+    <div class="name-t">Fatty hpuguvb </div>
+    </div>`
+    if(p1){
+        p1.remove();
+    }
+    if(p3){
+        p3.remove();
+    }
+    test.append(last);
+    changeicon.style.backgroundColor = 'grey';
+    l.style.backgroundColor = 'brown';
+    
+    });
+    
+    
+
+
+
