@@ -84,7 +84,9 @@ nav>div{
     font-size: 14px;
     cursor: pointer;
 }
-/*********************************** HOME PAGE *******************************/
+/*********************************** index.html *******************************/
+
+/*********************** first section -- home ************************/
 #home{
     display: inline-flex;
     flex-direction: row-reverse;
@@ -139,6 +141,57 @@ aside{
     font-weight: bold;
     margin: 0;
    
+}
+
+/*********************** 2nd section -- about ********************/
+
+
+/************************* 3rd section -- menu ***********************/
+#menu > p {
+    text-align: center;
+    color:crimson;
+    font-size: 1.15rem;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    margin: 100px 0 40px;
+
+}
+.menu-cards-cont {
+    display: flex;
+    justify-content:center;
+}
+.menu-card {
+    height: 700px;
+    width: 500px;
+    margin: 18px;
+    overflow: hidden;
+}
+.menu-card > img{
+    height: 690px;
+    width: 500px;
+    transition: 0.5s all ease-in-out;
+}
+.menu-card > img:hover {
+    transform: scale(1.15);
+}
+.menu-button-cont {
+    display: flex;
+    justify-content: center;
+}
+.menu-button {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    height: 60px;
+    width: 130px;
+    margin: 70px;
+    background-color:indianred;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.menu-button:hover {
+    background-color:rgb(218, 109, 109);
 }
 
 /* ********************** Login form  and  signup form ******************************/
@@ -397,6 +450,9 @@ section  p {
 }
 
 /* testimonial */
+.testimonial {
+    margin-bottom: 90px;
+}
 .person{
     display: flex;
     flex-direction: column;
@@ -456,17 +512,12 @@ section  p {
 }
 
 
-
-
-
-
-
-/* gallary */
+/*************************************** gallery **********************************************/
 #container{
     display: flex;
     flex-wrap: wrap;
       
-     background-image: linear-gradient(to bottom right, red, yellow);
+     background: linear-gradient(to bottom right, red, yellow);
      justify-content: center;
 }
 #container img:nth-child(1){
@@ -474,7 +525,7 @@ margin-top: 100px;
 }
 #container img:nth-child(2){
     margin-top: 100px;
-    }
+}
 #container>img{
     max-height: 300px;
     min-height: 300px;
@@ -482,10 +533,7 @@ margin-top: 100px;
    margin:10px;
 
 }
-#container img:hover{
-    transform: scale(1.2,1.2);
-    box-shadow: 0px 0px 6px 4px grey;
-}
+
 
 /*************************************** menu page ***************************************/
 .cafe-menu{
@@ -512,6 +560,7 @@ margin-top: 100px;
     width: 445px;
     transition: 0.5s all ease-in-out;
     box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    border-radius: 4%;
 }
 .menu-img-cont> img:hover{
     transform: scale(1.2);
