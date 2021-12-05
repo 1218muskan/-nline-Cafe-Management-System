@@ -178,13 +178,13 @@ aside{
 .menu-button-cont {
     display: flex;
     justify-content: center;
+    margin: 90px 0 140px;
 }
 .menu-button {
     text-transform: uppercase;
     font-size: 1.1rem;
     height: 60px;
     width: 130px;
-    margin: 70px;
     background-color:indianred;
     color: white;
     border: none;
@@ -193,6 +193,122 @@ aside{
 .menu-button:hover {
     background-color:rgb(218, 109, 109);
 }
+
+/* ***************************4th section -- gallery ***************************** */
+#photoGallery {
+    margin: 30px 0;
+    
+}
+.icon-gallery-cont{
+    background-color: #c96e4a;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px 0;
+}
+.icons-cont{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 0;
+}
+section.home-icon{
+    margin: 15px;
+    padding: 10px;
+}
+.home-icon > img {
+    margin-bottom: 40px;
+}
+.home-icon-desc {
+    color: white;
+    font-size: 1.02rem;
+    line-height: 1.5;
+}
+.home-icon-desc > h4 {
+    margin-bottom: 22px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+/* container with 3 sections for photos -- gallery */
+.gallery-cont {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    margin-bottom: 0;
+}
+
+/* left side image */
+section.gallery-left-img {
+    height: 460px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.gallery-left-img > img {
+    height: 230px;
+    width: 250px;
+}
+
+/* middle div with photo gallery as heading and view more button */
+.gallery-img-text-cont {
+    background-color: rgb(32, 39, 56) !important; 
+    overflow: auto;
+}
+.home-gallery-img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-gallery-img-text > h1{
+    color: #c46b48;
+    margin: 40px 10px;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.home-gallery-img-text > p {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 45px;
+}
+.home-to-gallery-button{
+    height: 50px;
+    width: 100px;
+    background-color: #da764f;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+.home-to-gallery-button:hover {
+    background-color: #c46b48;
+}
+
+/* right side image */
+section.gallery-right-img {
+    height: 460px;
+    width: 250px;
+}
+.gallery-right-img > img {
+    height: 460px;
+    width: 250px;
+}
+
+/* 2 imges outside the brown div inside photo gallery container */
+.home-gallery-extra-first-img{
+    width: 490px;
+    height: 260px;
+    margin-left: 100px;
+}
+.home-gallery-extra-second-img{
+    width: 260px;
+    height: 260px;
+    position: relative;
+    left: -4px;
+}
+
 
 /* ********************** Login form  and  signup form ******************************/
 
@@ -371,7 +487,7 @@ section  p {
 /* img+content */
 .img-a{
     margin-top:400px;
-    background-color: chocolate;
+    background-color:#b96543;
    height: 400px;
     width:100%;
 }
