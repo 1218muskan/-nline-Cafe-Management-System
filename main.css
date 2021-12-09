@@ -499,6 +499,7 @@ section  p {
     margin-top:50px;
       margin-left:40px;
 }
+
 /* content div */
 .content{
     margin-left:40px;
@@ -745,4 +746,131 @@ margin-top: 100px;
 .menu-item-list>* {
     margin-bottom: 15px;
     text-transform: capitalize;
+}
+
+/****************************************** order.html ***************************************/
+.order-food-categories-cont > h4 {
+    margin: 35px;
+    font-size: 1.4rem;
+    color: brown;
+
+}
+.order-food-categories{
+    margin:80px 25px;
+}
+.order-food-categories > h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 520;
+    font-size: 3.5rem;
+    margin: 20px;
+}
+.order-food-card-cont {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.order-food-card{
+    margin: 25px;
+    margin-right: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+
+    position: relative;
+}
+.order-food-card > img {
+    height: 240px;
+    width: 250px;
+}
+.order-food-card > h3 {
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+.price {
+    color: black;
+    margin-left: 8px;
+    font-size: 1.05rem;
+}
+
+button.add-to-cart{
+    background-color: rgb(253, 66, 66);
+    color: white;
+    font-size: 1.04rem;
+    position: absolute;
+    right: 10px;
+    border: none;
+    height: 38px;
+    width: 88px;
+    cursor: pointer;
+}
+hr {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.confirm-order-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 70px;
+}
+button.confirm-order {
+    height: 50px;
+    width: 120px;
+    font-size: 1.1rem;
+    padding: 5px;
+    background-color: indianred;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+button.confirm-order:hover{
+    height: 60px;
+    width: 130px;
+    font-size: 1.2rem;
+    background-color: rgb(218, 109, 109);
+}
+
+/************************************************** MyCart.html ************************************/
+button.back-to-order {
+    height: 63px;
+    width: 180px;
+    font-size: 1.1rem;
+    padding: 20px;
+    background-color: indianred;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    text-align: center;
+    margin: 70px;
+
+    transition: all 0.5s;
+}
+.back-to-order span {
+    /* display: inline-block; */
+    position: relative;
+    transition: 0.5s;
+}
+.back-to-order span:after {
+    content: '\00AB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 25px;
+    transition: 0.5s;
+}
+button.back-to-order:hover span {
+    padding-left: 30px;
+}
+.back-to-order:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+.cart-food-item , .cart-food-item-heading{
+    display: flex;
+    justify-content: space-evenly;
 }
