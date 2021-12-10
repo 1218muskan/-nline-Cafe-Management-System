@@ -746,3 +746,54 @@ margin-top: 100px;
     margin-bottom: 15px;
     text-transform: capitalize;
 }
+
+
+
+
+
+
+
+/****************************** payment ********************************/
+.payment{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+   
+    transform: translate(-50%,-50%);
+    width: 420px;
+    height: 540px;
+    padding: 80px ;
+    background: rgba(0,0,0,0.7);
+    color: white;
+}
+.card{
+    height:40px;
+    padding:10px;
+        border:1px solid white;
+        width: 100%;
+        margin: 10px;
+}
+.details{
+  margin-top: 40px;
+
+}
+.details>div{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: violet; */
+    align-items: center;
+}
+.details>div>input{
+    
+    width: 60%;
+    margin-top: 5px;
+      
+    border: 1px solid #fff;
+    background: transparent;
+    outline: none;
+   height: 30px;
+    color: #fff;
+    font-size: 15px; 
+}

@@ -33,4 +33,11 @@ login_signup_switch[1].addEventListener("click", function(){
     loginForm.style.display = "block";
 });
 
+//******************************* */ payment*/////////////////////
+var payment_close=document.getElementById('payment_close')
+var payment=document.getElementsByClassName("payment")
+payment_close.addEventListener("click", function(){
+    payment.style.display = "none";
+    
+});
 

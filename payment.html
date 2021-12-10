@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Payment</title>
+        
+        <link rel="stylesheet" href="main.css"> -->
+    </head>
+    <body>
+        <div class="payment">
+            <button class="closeBtn" id="payment_close">X</button>
+            <form action="">
+                <div class="card">
+                <input type="radio" id="credit-card" name=" card" value="credit">
+                <label for="credit-card"> Credit card</label>
+
+            </div>
+            <div class="card">
+            <input type="radio" id="debit-card" name=" card" value="debit">
+            <label for="debit-card"> Debit card</label>
+            
+            </div>
+            <div class="details">
+                <div>
+                  <label for="card-no">Card Number</label>
+                  <input type="text" id="card-no" placeholder="9876 7896 5678 6543">
+                </div>
+                
+                    <div>
+                    <label for="exp-date">EXPIRY</label>
+                    <input type="text" id="exp-date" placeholder="MM/YY">
+                </div>
+                <div>
+                    <label for="CVC">CVC</label>
+                    <input type="text" id="cvc" placeholder="123">
+                </div>
+                  
+            </div>
+                <input type="submit" value="Submit">
+              </form>
+
+
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+    
+</html>
